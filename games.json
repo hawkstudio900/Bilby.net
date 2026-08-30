@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Bilby",
+        "image": "assets/bilby-icon.png",
+        "link": "game/bilby.html",
+        "article":""
+    },
+    {
+        "id": 2,
+        "title": "CAT Z Studio",
+        "image": "assets/1.PNG",
+        "link": "game/catzstudio.html",
+        "article":""
+    },
+    {
+        "id": 3,
+        "title": "CAT Z Studio Beyond Time",
+        "image": "assets/catzstudiobt-icon.png",
+        "link": "game/catzstudiobt.html",
+        "article":""
+    }
+]

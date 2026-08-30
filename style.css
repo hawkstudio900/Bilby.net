@@ -4,13 +4,12 @@ body {
 }
 
 body {
-    background-color:white;
-    font-family: Arial;
     background-color: #000;
+    font-family: Arial;
 }
 
 .page {
-    width: 80%;
+    width: 90%;
     min-height: 100vh;
     margin: auto;
     background-color: #000;
@@ -20,11 +19,25 @@ body {
 }
 
 header {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    border-bottom: 1px solid white;
+
+    padding: 20px 40px;
+    border-bottom: none;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 111.111%;
+    height: 1px;
+    background-color: white;
+    transform: translateX(-50%);
 }
 
 .logo {
@@ -53,6 +66,11 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 15px;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.5;
 }
 
 main {
@@ -61,11 +79,25 @@ main {
 }
 
 footer {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 10px 40px;
-    border-top: 1px solid white;
+    border-top: none;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 111.111%;
+    height: 1px;
+    background-color: white;
+    transform: translateX(-50%);
 }
 
 .footer-text {
@@ -98,11 +130,14 @@ footer {
     filter: invert(1);
 }
 
+/* Games */
+
 .games {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 12px;
+
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -116,72 +151,6 @@ footer {
     color: lightgray !important;
 }
 
-
-nav a {
-    color: white;
-    transition: opacity 0.2s;
-}
-
-nav a:hover {
-    opacity: 0.5;
-}
-
-.discord{
-    color: white;
-    transition: opacity 0.2s;
-}
-
-.discord:hover{
-    opacity: 0.5;
-}
-
-.gamejolt{
-    color: white;
-    transition: opacity 0.2s;
-}
-
-.gamejolt:hover{
-    opacity: 0.5;
-}
-
-.itchio{
-    color: white;
-    transition: opacity 0.2s;
-}
-
-.itchio:hover{
-    opacity: 0.5;
-}
-
-.youtube{
-    color: white;
-    transition: opacity 0.2s;
-}
-
-.youtube:hover{
-    opacity: 0.5;
-}
-
-.icon{
-    color: white;
-    transition: opacity 0.2s;
-}
-
-.icon:hover{
-    opacity: 0.5;
-}
-
-.game img {
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
-}
-
-.game article {
-    color: lightgray;
-    font-family: arial;
-    font-size: smaller;
-}
 .game {
     display: flex;
     flex-direction: column;
@@ -189,19 +158,17 @@ nav a:hover {
     text-align: center;
 }
 
-.game article {
-    margin-top: 1px;
+.game img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+
+    color: white;
+    transition: opacity 0.2s;
 }
 
-.games {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    justify-content: center;
-    gap: 90px;
-}
-
-.game {
-    text-align: center;
+.game img:hover {
+    opacity: 0.5;
 }
 
 .game h1 {
@@ -210,13 +177,26 @@ nav a:hover {
 
 .game article {
     margin: 0;
+    color: lightgray;
+    font-family: Arial;
+    font-size: smaller;
 }
 
-.game img{
+/* Social icons */
+
+.discord,
+.gamejolt,
+.itchio,
+.youtube,
+.icon {
     color: white;
     transition: opacity 0.2s;
 }
 
-.game img:hover{
+.discord:hover,
+.gamejolt:hover,
+.itchio:hover,
+.youtube:hover,
+.icon:hover {
     opacity: 0.5;
 }
