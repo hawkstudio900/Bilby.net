@@ -4,20 +4,22 @@ body {
 }
 
 body {
-    background-color: #000;
-    font-family: Arial;
+    background-color: black;
+    font-family: Arial, sans-serif;
 }
 
-/* Background */
+/* =========================
+   Background
+========================= */
 
 .background {
     position: fixed;
 
-    top: 10%;
-    left: 10%;
+    top: 8%;
+    left: 5%;
 
-    width: 82%;
-    height: 82%;
+    width: 87.5%;
+    height: 87.5%;
 
     background-size: cover;
     background-position: center;
@@ -28,6 +30,10 @@ body {
 
     z-index: 0;
 }
+
+/* =========================
+   Page
+========================= */
 
 .page {
     position: relative;
@@ -43,21 +49,26 @@ body {
     flex-direction: column;
 }
 
-/* Header */
+/* =========================
+   Header
+========================= */
 
 header {
     position: relative;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
-    padding: 14px 40px;
-    border-bottom: none;
+    padding: 14px 5px 14px 40px;
+
+    background-color: black;
 }
+
+/* Header line */
 
 header::after {
     content: "";
+
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -70,6 +81,8 @@ header::after {
     transform: translateX(-50%);
 }
 
+/* Logo */
+
 .logo {
     display: flex;
     align-items: center;
@@ -77,27 +90,28 @@ header::after {
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: auto;
 }
 
-.logo p {
-    color: white;
-    font-size: 20px;
-    margin: 0;
-}
+/* Header Navigation */
 
-/* Navigation */
-
-nav {
+header > nav {
     display: flex;
     gap: 25px;
+
+    margin-left: auto;
 }
+
+/* =========================
+   Navigation
+========================= */
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
+
     transition: opacity 0.2s;
 }
 
@@ -105,14 +119,18 @@ nav a:hover {
     opacity: 0.5;
 }
 
-/* Main */
+/* =========================
+   Main
+========================= */
 
 main {
     flex: 1;
     padding: 40px;
 }
 
-/* Footer */
+/* =========================
+   Footer
+========================= */
 
 footer {
     position: relative;
@@ -121,12 +139,16 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    padding: 5px 40px;
-    border-top: none;
+    padding: 5px 5px 5px 40px;
+
+    background-color: #000;
 }
+
+/* Footer line */
 
 footer::before {
     content: "";
+
     position: absolute;
     top: 0;
     left: 50%;
@@ -138,6 +160,8 @@ footer::before {
 
     transform: translateX(-50%);
 }
+
+/* Footer text */
 
 .footer-text {
     display: flex;
@@ -159,6 +183,8 @@ footer::before {
     font-size: 14px;
 }
 
+/* Social icons */
+
 .icons {
     display: flex;
     gap: 10px;
@@ -167,13 +193,35 @@ footer::before {
 .icons img {
     width: 25px;
     height: 25px;
+
     filter: invert(1);
 }
 
-/* Games */
+.discord,
+.gamejolt,
+.itchio,
+.youtube,
+.icon {
+    color: white;
+
+    transition: opacity 0.2s;
+}
+
+.discord:hover,
+.gamejolt:hover,
+.itchio:hover,
+.youtube:hover,
+.icon:hover {
+    opacity: 0.5;
+}
+
+/* =========================
+   Games
+========================= */
 
 .games {
     display: grid;
+
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
 
@@ -197,6 +245,7 @@ footer::before {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     text-align: center;
 }
 
@@ -213,26 +262,16 @@ footer::before {
     opacity: 0.5;
 }
 
-/* Social icons */
-
-.discord,
-.gamejolt,
-.itchio,
-.youtube,
-.icon {
-    color: white;
-    transition: opacity 0.2s;
+.trailer {
+    width: 740px;
+    margin: 0 auto;
 }
 
-.discord:hover,
-.gamejolt:hover,
-.itchio:hover,
-.youtube:hover,
-.icon:hover {
-    opacity: 0.5;
-}
+.trailer video {
+    width: 100%;
+    height: auto;
+    display: block;
 
-header,
-footer {
-    background-color: #000;
+    border: 1px solid gray;
+    border-radius: 6px;
 }

@@ -6,7 +6,7 @@ const backgrounds = [
     "backgrounds/5.png"
 ];
 
-const interval = 2000;
+const interval = 6000;
 
 let current = 0;
 
