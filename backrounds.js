@@ -1,19 +1,19 @@
 const backgrounds = [
-    "backgrounds/1.png",
-    "backgrounds/2.png",
-    "backgrounds/3.png",
-    "backgrounds/4.png",
-    "backgrounds/5.png"
+    "../backgrounds/1.png",
+    "../backgrounds/2.png",
+    "../backgrounds/3.png",
+    "../backgrounds/4.png",
+    "../backgrounds/5.png"
 ];
 
 const interval = 2000;
 
 let current = 0;
 
-const background = document.getElementById("background");
+const background = document.querySelector(".backround");
 
 background.style.backgroundImage =
-    `url("${backrounds[current]}")`;
+    `url("${backgrounds[current]}")`;
 
 setInterval(() => {
     current++;
@@ -23,6 +23,6 @@ setInterval(() => {
     }
 
     background.style.backgroundImage =
-        `url("${backrounds[current]}")`;
+        `url("${backgrounds[current]}")`;
 
 }, interval);
