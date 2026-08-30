@@ -1,9 +1,9 @@
 const backgrounds = [
-    "../backrounds/1.png",
-    "../backrounds/2.png",
-    "../backrounds/3.png",
-    "../backrounds/4.png",
-    "../backrounds/5.png"
+    "backgrounds/1.png",
+    "backgrounds/2.png",
+    "backgrounds/3.png",
+    "backgrounds/4.png",
+    "backgrounds/5.png"
 ];
 
 const interval = 2000;
