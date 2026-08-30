@@ -16,13 +16,22 @@ background.style.backgroundImage =
     `url("${backgrounds[current]}")`;
 
 setInterval(() => {
-    current++;
 
-    if (current >= backgrounds.length) {
-        current = 0;
-    }
+    backround.style.opacity = 0;
 
-    background.style.backgroundImage =
-        `url("${backgrounds[current]}")`;
+    setTimeout(() => {
+
+        current++;
+
+        if (current >= backrounds.length) {
+            current = 0;
+        }
+
+        backround.style.backgroundImage =
+            `url("${backrounds[current]}")`;
+
+        backround.style.opacity = 1;
+
+    }, 1000);
 
 }, interval);
