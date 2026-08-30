@@ -1,4 +1,4 @@
-const backrounds = [
+const backgrounds = [
     "../backrounds/1.png",
     "../backrounds/2.png",
     "../backrounds/3.png",
@@ -10,19 +10,19 @@ const interval = 2000;
 
 let current = 0;
 
-const backround = document.getElementById("backround");
+const background = document.getElementById("background");
 
-backround.style.backgroundImage =
+background.style.backgroundImage =
     `url("${backrounds[current]}")`;
 
 setInterval(() => {
     current++;
 
-    if (current >= backrounds.length) {
+    if (current >= backgrounds.length) {
         current = 0;
     }
 
-    backround.style.backgroundImage =
+    background.style.backgroundImage =
         `url("${backrounds[current]}")`;
 
 }, interval);
