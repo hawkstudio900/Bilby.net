@@ -271,7 +271,7 @@ footer::before {
 }
 
 .game img:hover {
-    opacity: 0.1;
+    opacity: 0.95;
 }
 
 /* =========================
