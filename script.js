@@ -4,7 +4,7 @@ fetch("games.json")
 
         const container = document.getElementById("games-container");
 
-        games.forEach(game => {
+        games.slice().reverse().forEach(game => {
 
             const tile = document.createElement("div");
 

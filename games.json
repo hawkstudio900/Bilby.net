@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "title": "Bilby",
-        "image": "assets/bilby-icon.png",
+        "title": "Newest devlog! I added a new location to Bilby",
+        "image": "articles/no1.webp",
         "link": "game/bilby.html",
         "article":""
     },
