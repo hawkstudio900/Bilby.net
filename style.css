@@ -255,24 +255,23 @@ footer::before {
 
     padding: 15px;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .game img {
     width: 100%;
-    max-width: 250px;
-    height: 250px;
+    max-width: 300px;
+    height: auto;
 
     object-fit: contain;
 
-    border: 1px solid white;
-    border-radius: 6px;
+    
 
     transition: opacity 0.2s;
 }
 
 .game img:hover {
-    opacity: 0.5;
+    opacity: 0.1;
 }
 
 /* =========================
