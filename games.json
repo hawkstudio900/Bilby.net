@@ -5,19 +5,6 @@
         "image": "articles/no1.webp",
         "link": "game/bilby.html",
         "article":""
-    },
-    {
-        "id": 2,
-        "title": "CAT Z Studio",
-        "image": "assets/1.PNG",
-        "link": "game/catzstudio.html",
-        "article":""
-    },
-    {
-        "id": 3,
-        "title": "CAT Z Studio Beyond Time",
-        "image": "assets/catzstudiobt-icon.png",
-        "link": "game/catzstudiobt.html",
-        "article":""
     }
+    
 ]

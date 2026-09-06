@@ -235,7 +235,12 @@ footer::before {
 }
 
 .games p {
-    color: lightgray !important;
+    color: white !important;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin: 15px 0 8px;
 }
 
 .game {
@@ -244,6 +249,13 @@ footer::before {
     align-items: center;
 
     text-align: center;
+
+    border: 1px solid gray;
+    border-radius: 8px;
+
+    padding: 15px;
+
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .game img {
@@ -252,6 +264,9 @@ footer::before {
     height: 250px;
 
     object-fit: contain;
+
+    border: 1px solid white;
+    border-radius: 6px;
 
     transition: opacity 0.2s;
 }
